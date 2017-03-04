@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dr Who Trivia</title>
+  
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  
+</head>
+<body>
+<div class="container">
+	<!--This is the header for the page-->
+	<h1>Dr Who Trivia</h1>
+	</div>
+<!--This is the container for the page-->
+<div class="container content">
+
+
+	<section class="data">
+
+		<!--This is the timer-->
+		<div class="time">
+			<p class="counter"></p>
+		</div>
+	
+	 	<form action="#">
+
+    		<!-- These are the questions -->
+    		<label for="Who">Dr Who is a what?</label> <br>
+    			<input type="radio" name="Who" value="Dr of medicine"> Dr of medicine<br>
+    			<input type="radio" name="Who" value="Time Lord"> Time Lord<br>
+    			<input type="radio" name="Who" value="Computer programmer"> Computer programmer<br>
+    			<input type="radio" name="Who" value="Milk man"> Milk man<br>
+    		
+    		<label for="daughter">Who is Dr Who's daughter?</label> <br>
+    			<input type="radio" name="daughter" value="River"> River<br>
+    			<input type="radio" name="daughter" value="Dalek"> Dalek<br>
+    			<input type="radio" name="daughter" value="Jenny"> Jenny <br>
+    			<input type="radio" name="daughter" value="Clara"> Clara<br>
+
+    		<label for="enemy">Who is Dr Who's enemy ?</label> <br>
+    			<input type="radio" name="enemy" value="Daleks"> Daleks<br>
+    			<input type="radio" name="enemy" value="Clara"> Clara<br>
+    			<input type="radio" name="enemy" value="Jenny"> Jenny <br>
+    			<input type="radio" name="enemy" value="River"> River<br>
+
+    		<label for="wife">Who is Dr Who's Wife?</label> <br>
+    			<input type="radio" name="wife" value="River"> River<br>
+    			<input type="radio" name="wife" value="Clara"> Clara<br>
+    			<input type="radio" name="wife" value="Jenny"> Jenny <br>
+    			<input type="radio" name="wife" value="Rose"> Rose<br>
+
+    
+
+  		</form>
+		<!--This is the done button-->
+ 		<button class="btn btn-primary done">Done</button>
+
+	</section>
+	<!--This is the results section-->
+	<div class="result">
+   		<p class="correct"></p>
+   		<p class="incorrect"></p>
+   		<p class="empty"></p>
+ 	</div>
+
+		<!--This is the Start button-->
+  		<button class="btn btn-primary start">Start</button>
+
+	</div>
+
+
+<!--This is my javascript link-->
+<script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+
+</body>
+</html>

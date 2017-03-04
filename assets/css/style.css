@@ -1,0 +1,43 @@
+/*This is for the header*/
+h1 {
+	padding: 2%;
+	background-color: blue;
+	width: 20%;
+	height: 20%;
+	color: white;
+}
+
+
+/*This if for the body of the page*/
+body, html{
+	height:100%;
+	width:100%;
+	background-image: url("../images/DrWho1.jpg");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/*This is the main div on the page*/
+.content{
+	width:50%;
+	height:90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	opacity: 0.7;
+	
+}
+/*This is for the questions and answers*/
+label, .done{
+	margin-top:10px;
+}
+
+
+
+/*This is to hide the questions to start with*/
+.data{
+	display: none;
+}
+
