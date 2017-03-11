@@ -5,6 +5,7 @@ var correctAnswer = 0;
 var incorrectAnswer = 0;
 var empty = 0;
 var counter=30;
+var startCounter;
 
 
 //This is to loop through the answer array and see if the anwers are right, add one if right add one if wrong
@@ -30,7 +31,7 @@ function startGame(){
     $('.empty').html("You have " + empty + " that you have not selected");
     $('.correct').html("You have " + correctAnswer + " correct answers");
     $('.incorrect').html("You have " + incorrectAnswer + " incorrect answers");
-    
+    clearInterval(startCounter);
   }
 
 
@@ -40,7 +41,7 @@ $('.start').on('click', function(){
   $('.start').css('display', 'none');
   $('.data').css('display', 'block')
   //This is the counter running
-  var startCounter = setInterval(function(){
+     startCounter = setInterval(function(){
   counter--;
   //This displays the counter
   (counter <= 9) ? $('.counter').html("You have " + '0' + counter + ' remaining...') : $('.counter').html("You have " + counter + ' remaining...')
