@@ -43,7 +43,7 @@ $('.start').on('click', function(){
   var startCounter = setInterval(function(){
   counter--;
   //This displays the counter
-  $('.counter').html("You have " + counter);
+  (counter <= 9) ? $('.counter').html("You have " + '0' + counter + ' remaining...') : $('.counter').html("You have " + '00:'  + counter + ' remaining...')
   //This is if you run out of time it changes to results 
   //and hides the qestions
   if(counter == 0){
